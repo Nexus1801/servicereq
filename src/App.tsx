@@ -11,7 +11,7 @@ interface DrugDeliveryData {
 }
 
 function App() {
-    const drugOrderData = [];
+    //const drugOrderData = [];
 
 
     const [drugOrder, setDrugOrder] = useState<DrugDeliveryData>({
@@ -40,13 +40,6 @@ function App() {
         e.preventDefault();
 
         // Read the form data
-        const form = e.target;
-        const formData = new FormData(form);
-
-        fetch('/some-api', { method: form.method, body: formData });
-
-        const formJson = Object.fromEntries(formData.entries());
-        console.log(formJson);
 
     }
 
@@ -94,6 +87,9 @@ function App() {
                 </div>
                 <button type="submit">Submit</button>
                 <p>Employee Name: {drugOrder.employeeName}, Drug Name: {drugOrder.drugName}, Drug Quantity: {drugOrder.drugQuantity}, Room Location: {drugOrder.roomLocation}, Priority: {drugOrder.priority}</p>
+                <ul>
+
+                </ul>
 
 
             </form>
