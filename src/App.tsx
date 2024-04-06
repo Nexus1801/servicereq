@@ -43,7 +43,7 @@ function App() {
         <>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <h1>Drug Delivery Service Request</h1>
+                    <h1>Drug Delivery Service Request by Tri Vien Le and Alexander Lap</h1>
                     <label>
                         Employee Name: <input type="text" value={drugOrder.employeeName} onChange={e => setDrugOrder({...drugOrder,employeeName: e.target.value})}/>
                     </label>
