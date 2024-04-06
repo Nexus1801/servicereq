@@ -87,7 +87,7 @@ function App() {
                 <div>
                     <label>
                         Status:
-                        <select value={drugOrder.drugStatus} onChange={e => setDrugOrder({...drugOrder, priority: e.target.value})}>
+                        <select value={drugOrder.drugStatus} onChange={e => setDrugOrder({...drugOrder, drugStatus: e.target.value})}>
                             <option>Unassigned</option>
                             <option>Assigned</option>
                             <option>InProgress</option>
